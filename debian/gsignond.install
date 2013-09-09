@@ -1,0 +1,4 @@
+/usr/lib/libgsignond-*.so
+/usr/lib/gsignond/plugins/*.so
+/usr/bin/gsignond*
+/usr/etc/gsignond.conf

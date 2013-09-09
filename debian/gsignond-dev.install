@@ -1,4 +1,3 @@
 /usr/include/gsignond/*
-/usr/lib/libgsignond-*.so
 /usr/lib/pkgconfig/gsignond.pc
 /usr/share/dbus-1/interfaces/*SSO*.xml
