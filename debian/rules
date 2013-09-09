@@ -13,6 +13,7 @@ export DH_OPTIONS
 	dh $@ --parallel
 
 override_dh_auto_configure:
+	./autogen.sh --enable-dbus-type=session --enable-gtk-doc
 	dh_auto_configure -- --enable-dbus-type=session --enable-gtk-doc
 
 override_dh_builddeb:
