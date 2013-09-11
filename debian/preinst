@@ -18,7 +18,7 @@ case "$1" in
     install)
     ;;
     upgrade)
-        cp -a /etc/gsignond.conf /etc/gsignond.conf.orig
+        cp -a /usr/etc/gsignond.conf /usr/etc/gsignond.conf.orig
     ;;
 
     abort-upgrade)
