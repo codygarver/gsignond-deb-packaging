@@ -16,21 +16,21 @@ Vcs-Browser: http://code.google.com/p/accounts-sso/source/browse/?repo=gsignond
 
 Package: gsignond
 Architecture: any
-Depends: libgsignond1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libgsignond-common0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: gSSO daemon and default plugins
  gSSO is a single sign-on framework, providing secure storage and single sign-on service.
 
-Package: libgsignond1
+Package: libgsignond-common0
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Mutli-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Description: gSSO daemon library
+Description: gSSO common library
  gSSO is a single sign-on framework, providing secure storage and single sign-on service.
 
-Package: libgsignond-dev
+Package: libgsignond-common-dev
 Architecture: any
-Depends: libgsignond1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depens}
+Depends: libgsignond-common0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depens}
 Description: development files for gsignond
  Headers and libraries necessary for developing plugins and extensions.
 
