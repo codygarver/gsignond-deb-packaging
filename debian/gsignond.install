@@ -1,3 +1,2 @@
-/usr/lib/lib*.so.*
-/usr/lib/gsignond/plugins/*.so
 /usr/bin/gsignond*
+/usr/lib/gsignond/plugins/*.so
