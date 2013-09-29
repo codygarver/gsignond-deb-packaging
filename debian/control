@@ -4,10 +4,10 @@ Priority: extra
 Maintainer: Jussi Laako <jussi.laako@linux.intel.com>
 Build-Depends: autotools-dev,
                debhelper (>= 9),
-               libdbus-1-dev,
                gtk-doc-tools,
+               libdbus-1-dev,
+               libglib2.0-dev (>= 2.30),
                libsqlite3-dev,
-               libglib2.0-dev,
                pkg-config
 Standards-Version: 3.9.4
 Homepage: https://01.org/gsso
@@ -16,7 +16,9 @@ Vcs-Browser: http://code.google.com/p/accounts-sso/source/browse/?repo=gsignond
 
 Package: gsignond
 Architecture: any
-Depends: libgsignond-common0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libgsignond-common0 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: gSSO daemon and default plugins
  gSSO is a single sign-on framework, providing secure storage and single sign-on
   service.
@@ -33,7 +35,11 @@ Description: gSSO common library
 Package: libgsignond-common-dev
 Architecture: any
 Section: libdevel
-Depends: libgsignond-common0 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depens}
+Depends: libglib2.0-dev (>= 2.30),
+         libgsignond-common0 (= ${binary:Version}),
+         libsqlite3-dev,
+         ${misc:Depends},
+         ${shlibs:Depens}
 Description: development files for gsignond
  Headers and libraries necessary for developing plugins and extensions.
 
@@ -43,4 +49,3 @@ Section: doc
 Suggests: devhelp
 Description: documentation for gsignond
  Developer documentation for developing plugins and extensions.
-
