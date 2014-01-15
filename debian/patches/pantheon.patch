@@ -1,7 +1,7 @@
 Index: gsignond.conf.in
 ===================================================================
---- gsignond.conf.in	2013-10-24 11:50:05.510126880 +0200
-+++ gsignond.conf.in	2013-10-24 16:14:34.583555094 +0200
+--- a/gsignond.conf.in	2013-10-24 11:50:05.510126880 +0200
++++ b/gsignond.conf.in	2013-10-24 16:14:34.583555094 +0200
 @@ -10,7 +10,7 @@
  # Define extension / platform adaptation module to use.
  # 'default' is a dummy one with no encrypted storage, but with basic Unix

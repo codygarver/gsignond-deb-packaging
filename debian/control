@@ -26,7 +26,7 @@ Description: gSSO daemon and default plugins
 Package: libgsignond-common0
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Mutli-Arch: same
+Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Description: gSSO common library
  gSSO is a single sign-on framework, providing secure storage and single sign-on
