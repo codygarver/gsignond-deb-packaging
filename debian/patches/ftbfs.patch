@@ -1,0 +1,13 @@
+=== modified file 'src/gplugind/main.c'
+--- a/src/gplugind/main.c	2015-02-16 15:35:04 +0000
++++ b/src/gplugind/main.c	2015-03-27 12:41:18 +0000
+@@ -126,7 +126,7 @@
+ 
+ static void _list_watch_path()
+ {
+-    g_print(_plugin_path());
++    g_print("%s\n", _plugin_path());
+ }
+ 
+ int main (int argc, char **argv)
+
