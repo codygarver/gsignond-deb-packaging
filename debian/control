@@ -4,11 +4,14 @@ Priority: extra
 Maintainer: Jussi Laako <jussi.laako@linux.intel.com>
 Build-Depends: autotools-dev,
                debhelper (>= 9),
+               gobject-introspection (>= 1.30.0),
                gtk-doc-tools,
                libdbus-1-dev,
+               libgirepository1.0-dev (>= 1.30.0),
                libglib2.0-dev (>= 2.30),
                libsqlite3-dev,
-               pkg-config
+               pkg-config,
+               valac
 Standards-Version: 3.9.4
 Homepage: https://01.org/gsso
 Vcs-Git: http://code.google.com/p/accounts-sso.gsignond/
